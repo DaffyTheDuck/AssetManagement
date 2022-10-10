@@ -33,7 +33,7 @@ public class Login_Dialog extends JDialog {
 	public Login_Dialog() {
 		/* Create layout */
 		super((JDialog)null);
-		getContentPane().setBackground(new Color(40, 40, 40));
+		getContentPane().setBackground(new Color(255, 255, 255));
 		setModal(true);
 		setResizable(false);
 		setTitle("Please Login");
@@ -60,8 +60,8 @@ public class Login_Dialog extends JDialog {
 
 		JButton submitbtn = new JButton("SUMBIT");
 		submitbtn.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		submitbtn.setBackground(new Color(65, 105, 225));
-		submitbtn.setForeground(new Color(255, 255, 255));
+		submitbtn.setBackground(new Color(255, 255, 255));
+		submitbtn.setForeground(new Color(0, 0, 0));
 		submitbtn.setBounds(285, 279, 180, 35);
 		submitbtn.setMnemonic(KeyEvent.VK_ENTER);
 		getContentPane().add(submitbtn);
@@ -78,7 +78,8 @@ public class Login_Dialog extends JDialog {
 		});
 
 		lblNewLabel = new JLabel("Log in");
-		lblNewLabel.setForeground(new Color(255, 255, 255));
+		lblNewLabel.setBackground(new Color(0, 0, 0));
+		lblNewLabel.setForeground(new Color(0, 0, 0));
 		lblNewLabel.setFont(new Font("SansSerif", Font.BOLD, 36));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setBounds(316, 38, 120, 57);
@@ -86,19 +87,19 @@ public class Login_Dialog extends JDialog {
 
 		lblNewLabel_1 = new JLabel("Username");
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblNewLabel_1.setForeground(new Color(255, 255, 255));
+		lblNewLabel_1.setForeground(new Color(0, 0, 0));
 		lblNewLabel_1.setBounds(160, 138, 78, 18);
 		getContentPane().add(lblNewLabel_1);
 
 		lblNewLabel_2 = new JLabel("Password");
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblNewLabel_2.setForeground(new Color(255, 255, 255));
+		lblNewLabel_2.setForeground(new Color(0, 0, 0));
 		lblNewLabel_2.setBounds(160, 213, 78, 18);
 		getContentPane().add(lblNewLabel_2);
 
 		JButton exitbtn = new JButton("EXIT");
 		exitbtn.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		exitbtn.setBackground(new Color(65, 105, 225));
+		exitbtn.setBackground(new Color(255, 255, 255));
 		exitbtn.setForeground(new Color(225, 114, 111));
 		exitbtn.addActionListener(new ActionListener() {
 			@Override

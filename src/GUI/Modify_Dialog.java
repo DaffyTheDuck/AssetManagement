@@ -76,147 +76,158 @@ public class Modify_Dialog extends JDialog {
 		Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
 		int x = (int) ((dimension.getWidth() - getWidth()) / 2);
 		int y = (int) ((dimension.getHeight() - getHeight()) / 2);
-		this.setBounds(400, 300, 629, 570);
+		this.setBounds(400, 300, 1280, 720);
 		this.setLocationRelativeTo(null);
 		this.setLocation(x, y);
 		this.setLocationRelativeTo(null);
 		this.getContentPane().setLayout(null);
 
 		SrTboxSearch = new JTextField();
+		SrTboxSearch.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		SrTboxSearch.setHorizontalAlignment(SwingConstants.CENTER);
-		SrTboxSearch.setBounds(10, 36, 90, 26);
+		SrTboxSearch.setBounds(10, 36, 160, 26);
 		getContentPane().add(SrTboxSearch);
 		SrTboxSearch.setColumns(10);
 
 		IDTboxSearch = new JTextField();
+		IDTboxSearch.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		IDTboxSearch.setHorizontalAlignment(SwingConstants.CENTER);
 		IDTboxSearch.setColumns(10);
-		IDTboxSearch.setBounds(110, 36, 90, 26);
+		IDTboxSearch.setBounds(240, 36, 160, 26);
 		getContentPane().add(IDTboxSearch);
 
 		pdateTboxSearch = new JTextField();
+		pdateTboxSearch.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		pdateTboxSearch.setHorizontalAlignment(SwingConstants.CENTER);
 		pdateTboxSearch.setColumns(10);
-		pdateTboxSearch.setBounds(210, 36, 90, 26);
+		pdateTboxSearch.setBounds(457, 36, 160, 26);
 		getContentPane().add(pdateTboxSearch);
 
 		TypeTboxSearch = new JTextField();
+		TypeTboxSearch.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		TypeTboxSearch.setHorizontalAlignment(SwingConstants.CENTER);
 		TypeTboxSearch.setColumns(10);
-		TypeTboxSearch.setBounds(310, 36, 90, 26);
+		TypeTboxSearch.setBounds(676, 36, 160, 26);
 		getContentPane().add(TypeTboxSearch);
 
 		PriceTboxSearch = new JTextField();
+		PriceTboxSearch.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		PriceTboxSearch.setHorizontalAlignment(SwingConstants.CENTER);
 		PriceTboxSearch.setColumns(10);
-		PriceTboxSearch.setBounds(410, 36, 90, 26);
+		PriceTboxSearch.setBounds(889, 36, 160, 26);
 		getContentPane().add(PriceTboxSearch);
 
 		StatusTboxSearch = new JTextField();
+		StatusTboxSearch.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		StatusTboxSearch.setHorizontalAlignment(SwingConstants.CENTER);
 		StatusTboxSearch.setColumns(10);
-		StatusTboxSearch.setBounds(510, 36, 90, 26);
+		StatusTboxSearch.setBounds(1097, 36, 160, 26);
 		getContentPane().add(StatusTboxSearch);
 
 		JLabel lblNewLabel = new JLabel("Sr.");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblNewLabel.setBounds(10, 12, 90, 20);
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblNewLabel.setBounds(49, 12, 90, 20);
 		getContentPane().add(lblNewLabel);
 
 		JLabel lblId = new JLabel("ID");
 		lblId.setHorizontalAlignment(SwingConstants.CENTER);
-		lblId.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblId.setBounds(110, 12, 90, 20);
+		lblId.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblId.setBounds(282, 12, 90, 20);
 		getContentPane().add(lblId);
 
 		JLabel lblPurchaseDate = new JLabel("Purchase Date");
 		lblPurchaseDate.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPurchaseDate.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblPurchaseDate.setBounds(210, 12, 90, 20);
+		lblPurchaseDate.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblPurchaseDate.setBounds(473, 12, 117, 20);
 		getContentPane().add(lblPurchaseDate);
 
 		JLabel lblType = new JLabel("Type");
 		lblType.setHorizontalAlignment(SwingConstants.CENTER);
-		lblType.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblType.setBounds(310, 12, 90, 20);
+		lblType.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblType.setBounds(709, 12, 90, 20);
 		getContentPane().add(lblType);
 
 		JLabel lblPrice = new JLabel("Price");
 		lblPrice.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPrice.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblPrice.setBounds(410, 12, 90, 20);
+		lblPrice.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblPrice.setBounds(926, 12, 90, 20);
 		getContentPane().add(lblPrice);
 
 		JLabel lblStatus = new JLabel("Status");
 		lblStatus.setHorizontalAlignment(SwingConstants.CENTER);
-		lblStatus.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblStatus.setBounds(510, 12, 90, 20);
+		lblStatus.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblStatus.setBounds(1131, 12, 90, 20);
 		getContentPane().add(lblStatus);
 
 		ModifyBtn = new JButton("Modify");
 		ModifyBtn.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		ModifyBtn.setBounds(75, 486, 190, 34);
+		ModifyBtn.setBounds(365, 635, 190, 34);
 		getContentPane().add(ModifyBtn);
 
 		IDTboxModify = new JTextField();
+		IDTboxModify.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		IDTboxModify.setHorizontalAlignment(SwingConstants.CENTER);
 		IDTboxModify.setColumns(10);
-		IDTboxModify.setBounds(75, 445, 90, 26);
+		IDTboxModify.setBounds(181, 583, 145, 26);
 		getContentPane().add(IDTboxModify);
 
 		pdateTboxModify = new JTextField();
+		pdateTboxModify.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		pdateTboxModify.setHorizontalAlignment(SwingConstants.CENTER);
 		pdateTboxModify.setColumns(10);
-		pdateTboxModify.setBounds(175, 445, 90, 26);
+		pdateTboxModify.setBounds(365, 583, 145, 26);
 		getContentPane().add(pdateTboxModify);
 
 		TypeTboxModify = new JTextField();
+		TypeTboxModify.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		TypeTboxModify.setHorizontalAlignment(SwingConstants.CENTER);
 		TypeTboxModify.setColumns(10);
-		TypeTboxModify.setBounds(275, 445, 90, 26);
+		TypeTboxModify.setBounds(555, 583, 145, 26);
 		getContentPane().add(TypeTboxModify);
 
 		PriceTboxModify = new JTextField();
+		PriceTboxModify.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		PriceTboxModify.setHorizontalAlignment(SwingConstants.CENTER);
 		PriceTboxModify.setColumns(10);
-		PriceTboxModify.setBounds(375, 445, 90, 26);
+		PriceTboxModify.setBounds(744, 583, 145, 26);
 		getContentPane().add(PriceTboxModify);
 
 		StatusTboxModify = new JTextField();
+		StatusTboxModify.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		StatusTboxModify.setHorizontalAlignment(SwingConstants.CENTER);
 		StatusTboxModify.setColumns(10);
-		StatusTboxModify.setBounds(475, 445, 90, 26);
+		StatusTboxModify.setBounds(922, 583, 145, 26);
 		getContentPane().add(StatusTboxModify);
 
 		JLabel lblId_1 = new JLabel("ID");
 		lblId_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblId_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblId_1.setBounds(75, 421, 90, 20);
+		lblId_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblId_1.setBounds(210, 552, 90, 20);
 		getContentPane().add(lblId_1);
 
 		JLabel lblPurchaseDate_1 = new JLabel("Purchase Date");
 		lblPurchaseDate_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPurchaseDate_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblPurchaseDate_1.setBounds(175, 421, 90, 20);
+		lblPurchaseDate_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblPurchaseDate_1.setBounds(383, 552, 117, 20);
 		getContentPane().add(lblPurchaseDate_1);
 
 		JLabel lblType_1 = new JLabel("Type");
 		lblType_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblType_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblType_1.setBounds(275, 421, 90, 20);
+		lblType_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblType_1.setBounds(579, 552, 90, 20);
 		getContentPane().add(lblType_1);
 
 		JLabel lblPrice_1 = new JLabel("Price");
 		lblPrice_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPrice_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblPrice_1.setBounds(375, 421, 90, 20);
+		lblPrice_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblPrice_1.setBounds(763, 552, 90, 20);
 		getContentPane().add(lblPrice_1);
 
 		JLabel lblStatus_1 = new JLabel("Status");
 		lblStatus_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblStatus_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblStatus_1.setBounds(475, 421, 90, 20);
+		lblStatus_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblStatus_1.setBounds(950, 552, 90, 20);
 		getContentPane().add(lblStatus_1);
 
 		SearchBtn = new JButton("Search");
@@ -227,14 +238,14 @@ public class Modify_Dialog extends JDialog {
 		table = new JTable();
 		table.setBounds(10, 118, 590, 292);
 		JScrollPane scrollPane = new JScrollPane(table);
-		scrollPane.setBounds(10, 118, 590, 292);
+		scrollPane.setBounds(10, 118, 1244, 423);
 		getContentPane().add(scrollPane);
 		table.setRowSelectionAllowed(true);
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 
 		HelpBtn = new JButton("Help");
 		HelpBtn.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		HelpBtn.setBounds(210, 73, 190, 34);
+		HelpBtn.setBounds(536, 73, 190, 34);
 		getContentPane().add(HelpBtn);
 
 		ModifySelectBtn = new JButton("Modify Selected Row");
@@ -245,11 +256,11 @@ public class Modify_Dialog extends JDialog {
 			}
 		});
 		ModifySelectBtn.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		ModifySelectBtn.setBounds(410, 73, 190, 34);
+		ModifySelectBtn.setBounds(1064, 73, 190, 34);
 		getContentPane().add(ModifySelectBtn);
 
 		CancelBtn = new JButton("Cancel");
-		CancelBtn.setBounds(375, 486, 190, 34);
+		CancelBtn.setBounds(699, 635, 190, 34);
 		getContentPane().add(CancelBtn);
 		FillTable();
 		disableModificationFields(0);

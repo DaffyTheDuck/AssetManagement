@@ -48,23 +48,23 @@ public class Createdb_Dialog extends JDialog implements ActionListener {
 		setLocation(x, y);
 		setLocationRelativeTo(null);
 		getContentPane().setLayout(new BorderLayout());
-		contentPanel.setBackground(new Color(40, 40, 40));
+		contentPanel.setBackground(new Color(255, 255, 255));
 		contentPanel.setForeground(new Color(255, 255, 255));
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
 		contentPanel.setLayout(null);
 		/* Create radio buttons */
 		JRadioButton radio_newdb = new JRadioButton("Create New Database");
-		radio_newdb.setForeground(new Color(255, 255, 255));
-		radio_newdb.setBackground(new Color(40, 40, 40));
+		radio_newdb.setForeground(new Color(0, 0, 0));
+		radio_newdb.setBackground(new Color(255, 255, 255));
 		radio_newdb.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		radio_newdb.setBounds(124, 25, 193, 21);
 		contentPanel.add(radio_newdb);
 		radio_newdb.setActionCommand("new");
 
 		JRadioButton radio_olddb = new JRadioButton("Use Existing database");
-		radio_olddb.setForeground(new Color(255, 255, 255));
-		radio_olddb.setBackground(new Color(40, 40, 40));
+		radio_olddb.setForeground(new Color(0, 0, 0));
+		radio_olddb.setBackground(new Color(255, 255, 255));
 		radio_olddb.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		radio_olddb.setBounds(366, 25, 210, 21);
 		contentPanel.add(radio_olddb);
@@ -82,39 +82,42 @@ public class Createdb_Dialog extends JDialog implements ActionListener {
 
 		/* Create text boxes */
 		tbox_dbname = new JTextField();
-		tbox_dbname.setBounds(235, 131, 250, 35);
+		tbox_dbname.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		tbox_dbname.setBounds(214, 133, 250, 35);
 		contentPanel.add(tbox_dbname);
 		tbox_dbname.setColumns(10);
 
 		tbox_tablename = new JTextField();
+		tbox_tablename.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		tbox_tablename.setColumns(10);
-		tbox_tablename.setBounds(235, 227, 250, 35);
+		tbox_tablename.setBounds(214, 229, 250, 35);
 		contentPanel.add(tbox_tablename);
 
 		/* Create labels for text boxes */
 		JLabel lblNewLabel = new JLabel("Database Name");
-		lblNewLabel.setForeground(new Color(255, 255, 255));
+		lblNewLabel.setBackground(new Color(0, 0, 0));
+		lblNewLabel.setForeground(new Color(0, 0, 0));
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblNewLabel.setBounds(302, 107, 123, 13);
+		lblNewLabel.setBounds(277, 105, 123, 13);
 		contentPanel.add(lblNewLabel);
 
 		JLabel lblTableName = new JLabel("Table Name");
-		lblTableName.setForeground(new Color(255, 255, 255));
+		lblTableName.setForeground(new Color(0, 0, 0));
 		lblTableName.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblTableName.setBounds(318, 202, 94, 13);
+		lblTableName.setBounds(277, 196, 94, 13);
 		contentPanel.add(lblTableName);
 		{
 			JPanel buttonPane = new JPanel();
-			buttonPane.setBackground(new Color(40, 40, 40));
+			buttonPane.setBackground(new Color(255, 255, 255));
 			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
 			getContentPane().add(buttonPane, BorderLayout.SOUTH);
 		}
 
 		JButton exitbtn = new JButton("EXIT");
-		exitbtn.setBackground(new Color(65, 105, 225));
+		exitbtn.setBackground(new Color(255, 255, 255));
 		exitbtn.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		exitbtn.setForeground(new Color(255, 87, 51));
-		exitbtn.setBounds(235, 341, 250, 35);
+		exitbtn.setBounds(214, 343, 250, 35);
 		contentPanel.add(exitbtn);
 		exitbtn.addActionListener(new ActionListener() {
 			@Override
@@ -125,10 +128,10 @@ public class Createdb_Dialog extends JDialog implements ActionListener {
 		});
 
 		JButton okbtn = new JButton("OK");
-		okbtn.setBackground(new Color(65, 105, 225));
+		okbtn.setBackground(new Color(255, 255, 255));
 		okbtn.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		okbtn.setForeground(new Color(144, 255, 144));
-		okbtn.setBounds(235, 290, 250, 35);
+		okbtn.setForeground(new Color(0, 0, 0));
+		okbtn.setBounds(214, 295, 250, 35);
 		contentPanel.add(okbtn);
 		okbtn.addActionListener(new ActionListener() {
 			@Override

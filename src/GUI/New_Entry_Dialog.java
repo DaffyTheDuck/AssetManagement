@@ -64,7 +64,7 @@ public class New_Entry_Dialog extends JDialog {
 		Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
 		int x = (int) ((dimension.getWidth() - getWidth()) / 2);
 		int y = (int) ((dimension.getHeight() - getHeight()) / 2);
-		this.setBounds(400, 300, 629, 460);
+		this.setBounds(400, 300, 1280, 720);
 		this.setLocationRelativeTo(null);
 		this.setLocation(x, y);
 		this.setLocationRelativeTo(null);
@@ -73,73 +73,78 @@ public class New_Entry_Dialog extends JDialog {
 		AppendBtn = new JButton("Append Entry");
 		AppendBtn.setEnabled(false);
 		AppendBtn.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		AppendBtn.setBounds(185, 375, 280, 34);
+		AppendBtn.setBounds(502, 636, 280, 34);
 		getContentPane().add(AppendBtn);
 
 		IDTbox = new JTextField();
+		IDTbox.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		IDTbox.setHorizontalAlignment(SwingConstants.CENTER);
 		IDTbox.setColumns(10);
-		IDTbox.setBounds(75, 338, 90, 26);
+		IDTbox.setBounds(235, 584, 155, 30);
 		getContentPane().add(IDTbox);
 
 		pdateTbox = new JTextField();
+		pdateTbox.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		pdateTbox.setHorizontalAlignment(SwingConstants.CENTER);
 		pdateTbox.setColumns(10);
-		pdateTbox.setBounds(175, 338, 90, 26);
+		pdateTbox.setBounds(400, 584, 155, 30);
 		getContentPane().add(pdateTbox);
 
 		TypeTbox = new JTextField();
+		TypeTbox.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		TypeTbox.setHorizontalAlignment(SwingConstants.CENTER);
 		TypeTbox.setColumns(10);
-		TypeTbox.setBounds(275, 338, 90, 26);
+		TypeTbox.setBounds(565, 584, 155, 30);
 		getContentPane().add(TypeTbox);
 
 		PriceTbox = new JTextField();
+		PriceTbox.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		PriceTbox.setHorizontalAlignment(SwingConstants.CENTER);
 		PriceTbox.setColumns(10);
-		PriceTbox.setBounds(375, 338, 90, 26);
+		PriceTbox.setBounds(731, 584, 155, 30);
 		getContentPane().add(PriceTbox);
 
 		StatusTbox = new JTextField();
+		StatusTbox.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		StatusTbox.setHorizontalAlignment(SwingConstants.CENTER);
 		StatusTbox.setColumns(10);
-		StatusTbox.setBounds(475, 338, 90, 26);
+		StatusTbox.setBounds(896, 584, 155, 30);
 		getContentPane().add(StatusTbox);
 
 		JLabel lblId_1 = new JLabel("ID");
 		lblId_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblId_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblId_1.setBounds(75, 314, 90, 20);
+		lblId_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblId_1.setBounds(272, 553, 90, 20);
 		getContentPane().add(lblId_1);
 
 		JLabel lblPurchaseDate_1 = new JLabel("Purchase Date");
 		lblPurchaseDate_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPurchaseDate_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblPurchaseDate_1.setBounds(175, 314, 90, 20);
+		lblPurchaseDate_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblPurchaseDate_1.setBounds(423, 553, 108, 20);
 		getContentPane().add(lblPurchaseDate_1);
 
 		JLabel lblType_1 = new JLabel("Type");
 		lblType_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblType_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblType_1.setBounds(275, 314, 90, 20);
+		lblType_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblType_1.setBounds(598, 553, 90, 20);
 		getContentPane().add(lblType_1);
 
 		JLabel lblPrice_1 = new JLabel("Price");
 		lblPrice_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPrice_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblPrice_1.setBounds(375, 314, 90, 20);
+		lblPrice_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblPrice_1.setBounds(763, 553, 90, 20);
 		getContentPane().add(lblPrice_1);
 
 		JLabel lblStatus_1 = new JLabel("Status");
 		lblStatus_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblStatus_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblStatus_1.setBounds(475, 314, 90, 20);
+		lblStatus_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblStatus_1.setBounds(930, 553, 90, 20);
 		getContentPane().add(lblStatus_1);
 
 		table = new JTable();
 		table.setBounds(10, 118, 590, 292);
 		JScrollPane scrollPane = new JScrollPane(table);
-		scrollPane.setBounds(10, 11, 590, 292);
+		scrollPane.setBounds(10, 11, 1244, 520);
 		getContentPane().add(scrollPane);
 		table.setRowSelectionAllowed(true);
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);

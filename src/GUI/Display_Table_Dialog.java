@@ -24,7 +24,7 @@ public class Display_Table_Dialog extends JDialog {
 		Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
 		int x = (int) ((dimension.getWidth() - getWidth()) / 2);
 		int y = (int) ((dimension.getHeight() - getHeight()) / 2);
-		this.setBounds(400, 300, 600, 400);
+		this.setBounds(400, 300, 1280, 720);
 		this.setLocation(x, y);
 		this.setLocationRelativeTo(null);
 		this.getContentPane().setLayout(null);
@@ -33,7 +33,7 @@ public class Display_Table_Dialog extends JDialog {
 		table.setDefaultEditor(Object.class, null);
 		table.getTableHeader().setReorderingAllowed(false);
 		JScrollPane scrollPane = new JScrollPane(table);
-		scrollPane.setBounds(10, 11, 564, 339);
+		scrollPane.setBounds(10, 11, 1245, 659);
 		this.getContentPane().add(scrollPane);
 		try {
 			DefaultTableModel tableModel = new DefaultTableModel();
