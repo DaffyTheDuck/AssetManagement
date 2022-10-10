@@ -21,7 +21,7 @@ public class Main_Menu_Dialog extends JDialog {
 
 	public Main_Menu_Dialog() {
 		super((JDialog)null);
-		getContentPane().setBackground(Color.WHITE);
+		getContentPane().setBackground(new Color(255, 255, 255));
 		setModal(true);
 		setResizable(false);
 		setTitle("Main Menu");
@@ -30,60 +30,60 @@ public class Main_Menu_Dialog extends JDialog {
 		Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
 		int x = (int) ((dimension.getWidth() - getWidth()) / 2);
 		int y = (int) ((dimension.getHeight() - getHeight()) / 2);
-		setBounds(400, 300, 655, 450);
+		setBounds(400, 300, 1229, 720);
 		setLocation(x, y);
 		setLocationRelativeTo(null);
 		getContentPane().setLayout(null);
 
 		JLabel Logo = new JLabel(new ImageIcon(this.getClass().getClassLoader().getResource("logo.png")));
 		Logo.setHorizontalAlignment(SwingConstants.CENTER);
-		Logo.setBounds(220, 11, 200, 200);
+		Logo.setBounds(496, 78, 200, 200);
 		getContentPane().add(Logo);
 
 		JButton WriteBtn = new JButton("New Entry");
 
 		WriteBtn.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		WriteBtn.setBounds(220, 222, 200, 50);
+		WriteBtn.setBounds(496, 364, 200, 50);
 		getContentPane().add(WriteBtn);
 
 		JButton DisplayBtn = new JButton("Display Entries");
 		DisplayBtn.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		DisplayBtn.setBounds(10, 222, 200, 50);
+		DisplayBtn.setBounds(213, 364, 200, 50);
 		getContentPane().add(DisplayBtn);
 
 		JButton DeleteBtn = new JButton("Delete Entry");
 		DeleteBtn.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		DeleteBtn.setBounds(430, 222, 200, 50);
+		DeleteBtn.setBounds(783, 364, 200, 50);
 		getContentPane().add(DeleteBtn);
 
 		JButton SearchBtn = new JButton("Search Entries");
 		SearchBtn.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		SearchBtn.setBounds(10, 283, 200, 50);
+		SearchBtn.setBounds(213, 463, 200, 50);
 		getContentPane().add(SearchBtn);
 
 		JButton btnModifyEntries = new JButton("Modify Entries");
 
 		btnModifyEntries.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		btnModifyEntries.setBounds(220, 283, 200, 50);
+		btnModifyEntries.setBounds(496, 463, 200, 50);
 		getContentPane().add(btnModifyEntries);
 
 		JButton ExportBtn = new JButton("Export Database");
 
 		ExportBtn.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		ExportBtn.setBounds(430, 283, 200, 50);
+		ExportBtn.setBounds(783, 463, 200, 50);
 		getContentPane().add(ExportBtn);
 
 		JButton ExitBtn = new JButton("EXIT");
 		ExitBtn.setForeground(new Color(255, 0, 0));
 		ExitBtn.setFont(new Font("Tahoma", Font.PLAIN, 19));
-		ExitBtn.setBounds(220, 344, 200, 50);
+		ExitBtn.setBounds(496, 576, 200, 50);
 		getContentPane().add(ExitBtn);
 
 		JButton AboutBtn = new JButton("About Project");
 		AboutBtn.setForeground(Color.GRAY);
-		AboutBtn.setFont(new Font("Tahoma", Font.PLAIN, 9));
+		AboutBtn.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		AboutBtn.setBackground(Color.WHITE);
-		AboutBtn.setBounds(520, 387, 110, 23);
+		AboutBtn.setBounds(1065, 632, 138, 38);
 		getContentPane().add(AboutBtn);
 
 		ExitBtn.addActionListener(new ActionListener() {

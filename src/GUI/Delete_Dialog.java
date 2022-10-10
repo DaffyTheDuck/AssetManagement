@@ -63,104 +63,110 @@ public class Delete_Dialog extends JDialog {
 		Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
 		int x = (int) ((dimension.getWidth() - getWidth()) / 2);
 		int y = (int) ((dimension.getHeight() - getHeight()) / 2);
-		this.setBounds(400, 300, 626, 458);
+		this.setBounds(400, 300, 1280, 720);
 		this.setLocationRelativeTo(null);
 		this.setLocation(x, y);
 		this.setLocationRelativeTo(null);
 		this.getContentPane().setLayout(null);
 
 		SrTbox = new JTextField();
+		SrTbox.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		SrTbox.setHorizontalAlignment(SwingConstants.TRAILING);
-		SrTbox.setBounds(10, 36, 90, 26);
+		SrTbox.setBounds(10, 36, 195, 30);
 		getContentPane().add(SrTbox);
 		SrTbox.setColumns(10);
 
 		IDTbox = new JTextField();
+		IDTbox.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		IDTbox.setHorizontalAlignment(SwingConstants.TRAILING);
 		IDTbox.setColumns(10);
-		IDTbox.setBounds(110, 36, 90, 26);
+		IDTbox.setBounds(215, 36, 200, 30);
 		getContentPane().add(IDTbox);
 
 		pdateTbox = new JTextField();
+		pdateTbox.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		pdateTbox.setHorizontalAlignment(SwingConstants.TRAILING);
 		pdateTbox.setColumns(10);
-		pdateTbox.setBounds(210, 36, 90, 26);
+		pdateTbox.setBounds(425, 36, 200, 30);
 		getContentPane().add(pdateTbox);
 
 		TypeTbox = new JTextField();
+		TypeTbox.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		TypeTbox.setHorizontalAlignment(SwingConstants.TRAILING);
 		TypeTbox.setColumns(10);
-		TypeTbox.setBounds(310, 36, 90, 26);
+		TypeTbox.setBounds(635, 36, 200, 30);
 		getContentPane().add(TypeTbox);
 
 		PriceTbox = new JTextField();
+		PriceTbox.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		PriceTbox.setHorizontalAlignment(SwingConstants.TRAILING);
 		PriceTbox.setColumns(10);
-		PriceTbox.setBounds(410, 36, 90, 26);
+		PriceTbox.setBounds(850, 36, 200, 30);
 		getContentPane().add(PriceTbox);
 
 		StatusTbox = new JTextField();
+		StatusTbox.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		StatusTbox.setHorizontalAlignment(SwingConstants.TRAILING);
 		StatusTbox.setColumns(10);
-		StatusTbox.setBounds(510, 36, 90, 26);
+		StatusTbox.setBounds(1060, 36, 195, 30);
 		getContentPane().add(StatusTbox);
 
 		JLabel lblNewLabel = new JLabel("Sr.");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblNewLabel.setBounds(10, 12, 90, 20);
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblNewLabel.setBounds(62, 12, 90, 20);
 		getContentPane().add(lblNewLabel);
 
 		JLabel lblId = new JLabel("ID");
 		lblId.setHorizontalAlignment(SwingConstants.CENTER);
-		lblId.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblId.setBounds(110, 12, 90, 20);
+		lblId.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblId.setBounds(274, 12, 90, 20);
 		getContentPane().add(lblId);
 
 		JLabel lblPurchaseDate = new JLabel("Purchase Date");
 		lblPurchaseDate.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPurchaseDate.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblPurchaseDate.setBounds(210, 12, 90, 20);
+		lblPurchaseDate.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblPurchaseDate.setBounds(464, 12, 129, 20);
 		getContentPane().add(lblPurchaseDate);
 
 		JLabel lblType = new JLabel("Type");
 		lblType.setHorizontalAlignment(SwingConstants.CENTER);
-		lblType.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblType.setBounds(310, 12, 90, 20);
+		lblType.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblType.setBounds(686, 12, 90, 20);
 		getContentPane().add(lblType);
 
 		JLabel lblPrice = new JLabel("Price");
 		lblPrice.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPrice.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblPrice.setBounds(410, 12, 90, 20);
+		lblPrice.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblPrice.setBounds(898, 12, 90, 20);
 		getContentPane().add(lblPrice);
 
 		JLabel lblStatus = new JLabel("Status");
 		lblStatus.setHorizontalAlignment(SwingConstants.CENTER);
-		lblStatus.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblStatus.setBounds(510, 12, 90, 20);
+		lblStatus.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblStatus.setBounds(1112, 12, 90, 20);
 		getContentPane().add(lblStatus);
 
 		JButton searchbtn = new JButton("Search");
 		searchbtn.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		searchbtn.setBounds(10, 73, 190, 34);
+		searchbtn.setBounds(84, 73, 190, 34);
 		getContentPane().add(searchbtn);
 
 		ExportBtn = new JButton("Delete Selected Rows");
 		ExportBtn.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		ExportBtn.setBounds(410, 73, 190, 34);
+		ExportBtn.setBounds(976, 73, 190, 34);
 		getContentPane().add(ExportBtn);
 
 		table = new JTable();
 		table.setBounds(10, 118, 590, 292);
 		JScrollPane scrollPane = new JScrollPane(table);
-		scrollPane.setBounds(10, 118, 590, 292);
+		scrollPane.setBounds(10, 118, 1245, 552);
 		getContentPane().add(scrollPane);
 		ExportBtn.setEnabled(false);
 
 		JButton helpbtn = new JButton("Help");
 		helpbtn.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		helpbtn.setBounds(210, 73, 190, 34);
+		helpbtn.setBounds(542, 75, 190, 34);
 		getContentPane().add(helpbtn);
 		FillTable();
 

@@ -46,7 +46,7 @@ public class About_Dialog extends JDialog {
 				Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
 				if (desktop != null && desktop.isSupported(Desktop.Action.BROWSE)) {
 					try {
-						desktop.browse(new URL("https://github.com/shreyask21/assetmgmt/").toURI());
+						desktop.browse(new URL("https://github.com/DaffyTheDuck/AssetManagement").toURI());
 						dispose();
 					} catch (Exception ex) {
 						Error_Dialog.showError(ex);
